@@ -252,3 +252,4 @@ class Simulation:
 # Choosing n=-1 is flag value (IGNORE: since only generate_data uses n and generate_data will not be exposed as a
 # function, only as a method)
 add_gaussian_observations = Simulation(-1).add_gaussian_observations
+

@@ -4,3 +4,9 @@
 # include mase folder only
 !mase/
 !mase/*
+# include only:
+!LICENSE
+!Pipfile
+!Pipfile.lock
+!README.md
+!setup.py
