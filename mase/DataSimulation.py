@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-
-# !pip install pyplot-themes # run me if pyplot_themes import fails
 import pandas as pd
 import numpy as np
 import warnings
