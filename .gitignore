@@ -1,0 +1,6 @@
+
+# exclude all files and folders:
+*
+# include mase folder only
+!mase/
+!mase/*
