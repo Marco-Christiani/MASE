@@ -55,6 +55,7 @@ class Simulation:
                           'default to the object\'s stored `df` attribute. If you wish to use a different `df` '
                           'please use the function instead of the method.')
             return self.df  # If user passes df even though Simulation was initialized
+        return df
 
     def add_mean_drift(self, shifts_df, df=None):
         """
@@ -184,7 +185,7 @@ class Simulation:
             self.df = local_df
         return local_df
 
-    def add_gaussian_observations(self, summary_df, feature_index, df=None, visualize=False):
+    def add_gaussian_observations(self, summary_df, feature_index, df=None, visualize=False, append=False):
         """
         Args:
         summary_df:
@@ -215,19 +216,30 @@ class Simulation:
             else:
                 new_data = np.concatenate((new_data, d))
 
-        # Add new points to df by overwriting
         total_n_obs = summary_df['n_obs'].sum()
+        if append:  # Add new points by appending to df
+            # Unaffected features gain gaussian obs w/ sd, mean estimated from sample
+            temp_df = pd.DataFrame(columns=local_df.columns)
+            mean_list = local_df.mean()
+            sd_list = local_df.std()
+            for mean, sd, col in zip(mean_list, sd_list, temp_df.columns):
+                d = np.random.normal(mean, sd, total_n_obs)
+                temp_df[col] = d
+            # Append gaussian obs to local_df, affected feature will later be overwritten
+            local_df = pd.concat([local_df, temp_df], ignore_index=True)
+
+        # Add new points to df by overwriting
         local_df.loc[len(local_df) - total_n_obs:, feature_index] = new_data
 
         if visualize:
             import pyplot_themes as themes
             import seaborn as sns
-            from matplotlib.pyplot import show
+            from matplotlib.pyplot import show, figure
             themes.theme_ggplot2()
-            # fig = plt.figure(figsize=(15,5))
+            figure(figsize=(10, 7))
             normal_color = 'royalblue'
             anomalous_color = 'orangered'
-            added_idx = len(df)-total_n_obs
+            added_idx = len(local_df)-total_n_obs
             p = sns.lineplot(data=local_df[feature_index][:(added_idx+1)], color=normal_color)
             sns.lineplot(data=local_df[feature_index][added_idx :], ax=p, color=anomalous_color) # plot added obs
             sns.scatterplot(data=local_df[feature_index][added_idx : ], ax=p, color='black') # add dots to all new data
@@ -239,6 +251,7 @@ class Simulation:
 
         if self.initialized:
             self.df = local_df
+            return
         return local_df
 
     def get_data(self):
