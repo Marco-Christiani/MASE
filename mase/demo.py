@@ -23,12 +23,15 @@ def run_demo():
     summary_df = pd.DataFrame()
     summary_df['mean'] = [3, 0]
     summary_df['sd'] = [1, 1]
-    summary_df['n_obs'] = [20,10]
+    summary_df['n_obs'] = [20, 10]
     feature_index = 0
-    sim.add_gaussian_observations(summary_df, feature_index)
     d = sim.get_data()
     print(d)
     sim.add_gaussian_observations(summary_df, feature_index, visualize=True)
+
+    # Add obs to existing df
+    # add_gaussian_observations(summary_df, feature_index, df=d, visualize=True, append=True)
+
 
 def demo1():
     # Generate data with matching mean and correlation structure provided
@@ -101,6 +104,7 @@ def demo1():
     ax.set_title('Feature 6 Rolling Mean')
     plt.show()
 
+
 def demo_step_shift():
     # Demonstrate adding gaussian observations
     sd = sim_df[3].std()
@@ -155,6 +159,7 @@ def demo_step_shift():
     p2.set_title('Feature 3 Rolling Mean')
     plt.show()
     return new_df
+
 
 def demo_smooth_shift(df):
     # Demonstrate adding gaussian observations
@@ -229,6 +234,7 @@ def anomaly_demo():
     ax.set_ylabel('Feature 3')
     ax.set_title('Feature 3 with Anomalies Added')
     plt.show()
+
 
 if __name__ == '__main__':
     run_demo()
