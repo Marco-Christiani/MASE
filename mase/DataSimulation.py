@@ -136,6 +136,8 @@ class Simulation:
 
     def add_anomalies(self, anomalies_df, df=None):
         """
+        *THIS METHOD IS DEPRECATED*
+
         Adds anomalous points to dataframe
 
         Args:
@@ -188,27 +190,42 @@ class Simulation:
     def add_gaussian_observations(self, summary_df, feature_index, df=None, visualize=False, append=False):
         """
         Args:
-        summary_df:
-            Contains mean and standard deviation of gaussian distribution being added to
-            a feature.
-            In practice, means should be calculated as a ratio of the standard deviation
-            before being passed to this method.
-            i.e.
-            ----------------------
-            |  mean |  sd  | n_obs |
-            |--------------|-------|
-            |  2.3  |  1.2 |   10  |
-            |   0   |  1.3 |   20  |
-            ----------------------
+            summary_df:
+                Contains mean and standard deviation of gaussian distribution being added to
+                a feature.
+                Means are represented as a percentage of the standard deviation.
+                Standard Deviations are represented as a percentage if itself.
+                i.e.
+                 ----------------------
+                |  mean |  sd  | n_obs |
+                |--------------|-------|
+                |  2.3  |  1.2 |   10  |
+                |   0   |  1.3 |   20  |
+                 ----------------------
+                 Feature at `feature_index` will gain 10 Gaussian distributed observations with mean mean+2.3*sd and standard
+                  deviation 1.2*sd and 20 observations with mean 0 and standard deviation 1.3*sd. These observations
+                  will either be appended ot overwritten depending on `append` argument.
+
+            feature_index: index of feature to be shifted
+            df:
+                Optional; if not None, this method is being used as a function on a DataFrame: `df` rather than a method
+                on a `Simulation` object.
+            visualize:
+                Optional; whether or not to plot the results
+            append:
+                Optional; if True, new observations will be appended to the DataFrame. Else, trailing observations are
+                overwritten
         """
         df = self._check_initialized(df)
 
         local_df = df.copy(deep=True)
+        original_sd = local_df.std()[feature_index]
+        original_mean = local_df.mean()[feature_index]
         new_data = None
         for index, row in summary_df.iterrows(
         ):  # iterate over rows of summary_df
-            mean = row['mean']
-            sd = row['sd']
+            mean = original_mean+row['mean']*original_sd
+            sd = row['sd']*original_sd
             n = int(row['n_obs'])
             d = np.random.normal(mean, sd, n)
             if new_data is None:
@@ -246,7 +263,6 @@ class Simulation:
             p.set_xlabel('Observation')
             p.set_ylabel(f'Feature {feature_index}')
             p.set_title(f'Feature {feature_index} with Added Observations')
-            # plt.savefig(data_dir+'step shift_plot1.png', dpi=300)
             show()
 
         if self.initialized:
