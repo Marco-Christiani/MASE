@@ -4,8 +4,19 @@ import warnings
 
 
 class Simulation:
+    """
+    A Simulation object stores a Pandas DataFrame where the number of features is determined by the ``means`` or 
+    the number of features will be set to ``n_observations`` thus the DataFrame will be square.
+
+    Currently, MASE only supports simulation of multivariate normal data.
+
+    Args:
+        n_observations: number of observations to simulate
+        means: Optional; numpy array of means corresponding to each feature
+        covariance_matrix: Optional; numpy array of covariance matrix that you would like the simulated data to emulate
+    """
     def __init__(self, n_observations, means: np.ndarray = None, covariance_matrix: np.ndarray = None):
-        # Flag value that indicates function use, not method use
+        # Hidden flag value that indicates function use, not method use
         # Therefore, we set a flag and immediately return
         if n_observations == -1:
             self.initialized = False
@@ -57,7 +68,7 @@ class Simulation:
             return self.df  # If user passes df even though Simulation was initialized
         return df
 
-    def add_mean_drift(self, shifts_df, df=None):
+    def _add_mean_drift(self, shifts_df, df=None):
         """
         *THIS METHOD IS DEPRECATED*
         Gradually shifts mean over time.
@@ -134,7 +145,7 @@ class Simulation:
             self.df = local_df
         return local_df
 
-    def add_anomalies(self, anomalies_df, df=None):
+    def _add_anomalies(self, anomalies_df, df=None):
         """
         *THIS METHOD IS DEPRECATED*
 
@@ -189,32 +200,35 @@ class Simulation:
 
     def add_gaussian_observations(self, summary_df, feature_index, df=None, visualize=False, append=False):
         """
+
         Args:
             summary_df:
                 Contains mean and standard deviation of gaussian distribution being added to
                 a feature.
                 Means are represented as a percentage of the standard deviation.
                 Standard Deviations are represented as a percentage if itself.
-                i.e.
-                 ----------------------
-                |  mean |  sd  | n_obs |
-                |--------------|-------|
-                |  2.3  |  1.2 |   10  |
-                |   0   |  1.3 |   20  |
-                 ----------------------
-                 Feature at `feature_index` will gain 10 Gaussian distributed observations with mean mean+2.3*sd and standard
-                  deviation 1.2*sd and 20 observations with mean 0 and standard deviation 1.3*sd. These observations
-                  will either be appended ot overwritten depending on `append` argument.
 
+                For example:
+
+                    +------+----+-------+
+                    | mean | sd | n_obs |
+                    +======+====+=======+
+                    |  2.3 |1.2 |  10   |
+                    |      |    |       |
+                    |  0   |1.3 |  20   |
+                    +------+----+-------+
+
+                    Feature at ``feature_index`` will gain 10 Gaussian distributed observations with mean mean+2.3*sd and standard
+                    deviation 1.2*sd and 20 observations with mean 0 and standard deviation 1.3*sd. These observations
+                    will either be appended or overwritten depending on the ``append`` parameter.
             feature_index: index of feature to be shifted
             df:
-                Optional; if not None, this method is being used as a function on a DataFrame: `df` rather than a method
-                on a `Simulation` object.
+                Optional; if not None, this method is being used as a function on a DataFrame rather than a method on a ``Simulation`` object.
             visualize:
                 Optional; whether or not to plot the results
             append:
                 Optional; if True, new observations will be appended to the DataFrame. Else, trailing observations are
-                overwritten
+                overwritten.
         """
         df = self._check_initialized(df)
 
@@ -271,6 +285,12 @@ class Simulation:
         return local_df
 
     def get_data(self):
+        """
+        Getter for DataFrame of ``Simulation`` object
+
+        Returns:
+            Pandas DataFrame
+        """
         return self.df
 
 

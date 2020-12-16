@@ -6,7 +6,7 @@ def basic_demo():
     sim = Simulation(100, covariance_matrix=cov)  # 100 observations
     summary_df = pd.DataFrame()
     summary_df['mean'] = [3, 0]
-    summary_df['sd'] = [1, 1]
+    summary_df['sd'] = [1, 2]
     summary_df['n_obs'] = [20, 10]
     feature_index = 0
     d = sim.get_data()
