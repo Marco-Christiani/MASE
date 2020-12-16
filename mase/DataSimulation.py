@@ -6,6 +6,7 @@ import warnings
 class Simulation:
     """
     A Simulation object stores a Pandas DataFrame where the number of features is determined by the ``means`` or 
+    ``covariance_matrix`` arguments supplied at initialization. If neither ``means`` nor ``covariance_matrix`` is supplied,
     the number of features will be set to ``n_observations`` thus the DataFrame will be square.
 
     Currently, MASE only supports simulation of multivariate normal data.
