@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="mase",
-    version="0.0.4",
+    version="0.0.7",
     author="Marco Christiani",
     author_email="mchristiani2017@gmail.com",
     description="A data simulation engine for multivariate time series data.",

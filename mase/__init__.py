@@ -1,2 +1,2 @@
 from .DataSimulation import *
-from .demo import run_demo
+from .demo import basic_demo, adding_obs_demo
