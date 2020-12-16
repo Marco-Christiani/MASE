@@ -31,7 +31,6 @@ release = '0.0.7'
 # ones.
 extensions = [
 	'sphinx_rtd_theme', # Read The Docs theme
-	'rinoh.frontend.sphinx',  # adds PDF output
 	'sphinx.ext.autodoc',
     'sphinx.ext.napoleon', # For google docstring support
     'sphinx.ext.mathjax', # latex
