@@ -10,3 +10,9 @@
 !Pipfile.lock
 !README.md
 !setup.py
+
+# include docs for RTD/Sphinx
+!docs/
+!docs/**
+
+.* # ignore all hiden files

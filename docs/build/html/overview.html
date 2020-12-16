@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Overview &mdash; MASE 0.0.7 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Simulating New Data" href="simulating_data.html" />
+    <link rel="prev" title="Installation" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> MASE
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simulating_data.html">Simulating New Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="existing_data.html">Adding to Existing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="complex_example.html">Complex Pattern Example</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MASE</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p>The Multivariate Anomaly Simulation Engine (MASE) is one of two Python packages (along with MITTEN) developed by a team of three college students studying Computational Modeling and Data Analytics, Computer Science, Mathematics, and Statistics. Any issues can be reported on <a class="reference external" href="https://github.com/Marco-Christiani/MASE/">Github</a>.</p>
+<dl class="py class">
+<dt id="mase.Simulation">
+<em class="property">class </em><code class="sig-prename descclassname">mase.</code><code class="sig-name descname">Simulation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_observations</span></em>, <em class="sig-param"><span class="n">means</span><span class="p">:</span> <span class="n">numpy.ndarray</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">covariance_matrix</span><span class="p">:</span> <span class="n">numpy.ndarray</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mase.Simulation" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Simulation object stores a Pandas DataFrame where the number of features is determined by the <code class="docutils literal notranslate"><span class="pre">means</span></code> or
+<code class="docutils literal notranslate"><span class="pre">covariance_matrix</span></code> arguments supplied at initialization. If neither <code class="docutils literal notranslate"><span class="pre">means</span></code> nor <code class="docutils literal notranslate"><span class="pre">covariance_matrix</span></code> is supplied,
+the number of features will be set to <code class="docutils literal notranslate"><span class="pre">n_observations</span></code> thus the DataFrame will be square.</p>
+<p>Currently, MASE only supports simulation of multivariate normal data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_observations</strong> – number of observations to simulate</p></li>
+<li><p><strong>means</strong> – Optional; numpy array of means corresponding to each feature</p></li>
+<li><p><strong>covariance_matrix</strong> – Optional; numpy array of covariance matrix that you would like the simulated data to emulate</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="mase.Simulation.add_gaussian_observations">
+<code class="sig-name descname">add_gaussian_observations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">summary_df</span></em>, <em class="sig-param"><span class="n">feature_index</span></em>, <em class="sig-param"><span class="n">df</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">visualize</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">append</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mase.Simulation.add_gaussian_observations" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>summary_df</strong> – <p>Contains mean and standard deviation of gaussian distribution being added to
+a feature.
+Means are represented as a percentage of the standard deviation.
+Standard Deviations are represented as a percentage if itself.</p>
+<p>For example:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 24%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>mean</p></th>
+<th class="head"><p>sd</p></th>
+<th class="head"><p>n_obs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2.3</p>
+<p>0</p>
+</td>
+<td><p>1.2</p>
+<p>1.3</p>
+</td>
+<td><p>10</p>
+<p>20</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Feature at <code class="docutils literal notranslate"><span class="pre">feature_index</span></code> will gain 10 Gaussian distributed observations with mean mean+2.3*sd and standard
+deviation 1.2*sd and 20 observations with mean 0 and standard deviation 1.3*sd. These observations
+will either be appended or overwritten depending on the <code class="docutils literal notranslate"><span class="pre">append</span></code> parameter.</p>
+</div></blockquote>
+</p></li>
+<li><p><strong>feature_index</strong> – index of feature to be shifted</p></li>
+<li><p><strong>df</strong> – Optional; if not None, this method is being used as a function on a DataFrame rather than a method on a <code class="docutils literal notranslate"><span class="pre">Simulation</span></code> object.</p></li>
+<li><p><strong>visualize</strong> – Optional; whether or not to plot the results</p></li>
+<li><p><strong>append</strong> – Optional; if True, new observations will be appended to the DataFrame. Else, trailing observations are
+overwritten.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mase.Simulation.get_data">
+<code class="sig-name descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mase.Simulation.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for DataFrame of <code class="docutils literal notranslate"><span class="pre">Simulation</span></code> object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Pandas DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="simulating_data.html" class="btn btn-neutral float-right" title="Simulating New Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Marco Christiani
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

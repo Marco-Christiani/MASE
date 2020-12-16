@@ -1,0 +1,1352 @@
+---------------------------------- page 1 ----------------------------------
+#### DownExpandingContainer('title')
+  StaticGroupedFlowables()
+    Paragraph('MASE', style='title page title')
+         > (0,0,1,0,2) title page title
+           (0,0,0,0,2) body
+      SingleStyledText('MASE')
+    Paragraph('Release 0.0.7', style='title page subtitle')
+         > (0,0,1,0,2) title page subtitle
+           (0,0,0,0,2) body
+      SingleStyledText('Release 0.0.7')
+    Paragraph('Marco Christiani', style='title page author')
+         > (0,0,1,0,2) title page author
+           (0,0,0,0,2) body
+      SingleStyledText('Marco Christiani')
+    Paragraph('Dec 16, 2020', style='title page date')
+         > (0,0,1,0,2) title page date
+           (0,0,0,0,2) body
+      SingleStyledText('Dec 16, 2020')
+---------------------------------- page i ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Table of Contents', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+    Field('Table of Contents')
+      SingleStyledText('Table of Contents')
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    TableOfContentsSection(style='table of contents')
+         > (0,0,1,0,1) table of contents section
+           (0,0,0,1,1) chapter
+      TableOfContents()   table of contents
+           > (0,0,0,0,2) table of contents
+        TableOfContentsEntry('1	Installation	1')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('1	Installation	1')
+              ReferenceField('1')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('1')
+              Tab('	')
+              ReferenceField('Installation')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Installation')
+              Tab('	')
+              ReferenceField('1')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('1')
+        TableOfContentsEntry('2	Overview	3')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('2	Overview	3')
+              ReferenceField('2')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('2')
+              Tab('	')
+              ReferenceField('Overview')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Overview')
+              Tab('	')
+              ReferenceField('3')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        TableOfContentsEntry('3	Simulating New Data	5')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('3	Simulating New Data	5')
+              ReferenceField('3')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+              Tab('	')
+              ReferenceField('Simulating New Data')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Simulating New Data')
+              Tab('	')
+              ReferenceField('5')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('5')
+        TableOfContentsEntry('3.1	Create a Simulation Object	5')
+             > (0,0,0,1,2) toc level 2
+            MixedStyledText('3.1	Create a Simulation Object	5')
+              ReferenceField('3.1')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3.1')
+              Tab('	')
+              ReferenceField('Create a Simulation Object')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Create a Simulation Object')
+              Tab('	')
+              ReferenceField('5')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('5')
+        TableOfContentsEntry('	Index	9')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('	Index	9')
+              ReferenceField('')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('')
+              Tab('	')
+              ReferenceField('Index')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Index')
+              Tab('	')
+              ReferenceField('9')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('9')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		i')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		i')
+        Tab('	')
+        Tab('	')
+        Field('i')
+          SingleStyledText('i')
+---------------------------------- page 1 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Chapter 1', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('Chapter 1')
+      MixedStyledText('Chapter ')
+        StringField('Chapter')
+          SingleStyledText('Chapter')
+        SingleStyledText(' ')
+      Field('1', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('1')
+  Paragraph('Installation', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Installation')
+      SingleStyledText('Installation')
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    DocumentTree()
+      StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:0 <compound>
+        StaticGroupedFlowables(id='%install')   None:None <start_of_file>
+          Section(id='%install#installation')   /Users/mchris/Documents/GitHub/MASE/docs/source/install.rst:2 <section>
+               > (0,0,0,1,2) chapter
+            Paragraph('At the command line:')   /Users/mchris/Documents/GitHub/MASE/docs/source/install.rst:4 <paragraph>
+                 > (0,0,0,0,2) body
+              MixedStyledText('At the command line:')
+                SingleStyledText('At the command line:')
+            Paragraph('pip3 install mase')   /Users/mchris/Documents/GitHub/MASE/docs/source/install.rst:6 <paragraph>
+                 > (0,0,0,0,2) body
+              MixedStyledText('pip3 install mase')
+                MixedStyledText('pip3 install mase', style='monospaced')   None:None <literal>
+                     > (0,0,1,0,1) monospaced
+                  SingleStyledText('pip3 install mase')
+            Paragraph('From a Jupyter Notebook cell:')   /Users/mchris/Documents/GitHub/MASE/docs/source/install.rst:8 <paragraph>
+                 > (0,0,0,0,2) body
+              MixedStyledText('From a Jupyter Notebook cell:')
+                SingleStyledText('From a Jupyter Notebook cell:')
+            Paragraph('!pip3 install mase')   /Users/mchris/Documents/GitHub/MASE/docs/source/install.rst:10 <paragraph>
+                 > (0,0,0,0,2) body
+              MixedStyledText('!pip3 install mase')
+                MixedStyledText('!pip3 install mase', style='monospaced')   None:None <literal>
+                     > (0,0,1,0,1) monospaced
+                  SingleStyledText('!pip3 install mase')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		1')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		1')
+        Tab('	')
+        Tab('	')
+        Field('1')
+          SingleStyledText('1')
+---------------------------------- page 2 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      (continued) StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:0 <compound>
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MASE, Release 0.0.7')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MASE, Release 0.0.7')
+        Field('MASE')
+          SingleStyledText('MASE')
+        SingleStyledText(', ')
+        Field('Release 0.0.7')
+          SingleStyledText('Release 0.0.7')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('2		Chapter 1.  Installation')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('2		Chapter 1.  Installation')
+        Field('2')
+          SingleStyledText('2')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+          SingleStyledText('Chapter')
+        SingleStyledText(' ')
+        Field('1')
+          SingleStyledText('1')
+        SingleStyledText('.  ')
+        Field('Installation')
+          SingleStyledText('Installation')
+---------------------------------- page 3 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Chapter 2', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('Chapter 2')
+      MixedStyledText('Chapter ')
+        StringField('Chapter')
+          SingleStyledText('Chapter')
+        SingleStyledText(' ')
+      Field('2', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('2')
+  Paragraph('Overview', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Overview')
+      SingleStyledText('Overview')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      (continued) StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:0 <compound>
+        StaticGroupedFlowables(id='%overview')   None:None <start_of_file>
+          Section(id='%overview#overview')   /Users/mchris/Documents/GitHub/MASE/docs/source/overview.rst:2 <section>
+               > (0,0,0,1,2) chapter
+            LabeledFlowable(style='object description')   None:None <desc>
+                 > (0,0,1,0,2) object description
+              StaticGroupedFlowables(style='signatures')
+                   > (0,0,2,0,3) object signatures
+                Paragraph('class mase.Simulation ( n_observ...', id='%overview#mase.Simulation')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:1 <desc_signature>
+                     > (0,0,2,0,5) object signature
+                       (0,0,0,0,2) body
+                  MixedStyledText('class mase.Simulation ( n_observ...')
+                    MixedStyledText('class ', style='annotation')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText('class ')
+                    MixedStyledText('mase.', style='additional name part')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:None <desc_addname>
+                         > (0,0,3,0,6) additional name part
+                      SingleStyledText('mase.')
+                    MixedStyledText('Simulation', style='main object name')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:None <desc_name>
+                         > (0,0,3,0,6) object name
+                      SingleStyledText('Simulation')
+                    MixedStyledText(' ( n_observations, means: numpy....')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:None <desc_parameterlist>
+                      MixedStyledText(' ( n_observations, means: numpy....')
+                        SingleStyledText(' ( ', style='parentheses')
+                             > (0,0,3,0,6) object parentheses
+                        MixedStyledText('n_observations, means: numpy.nda...', style='parameter list')
+                             > (0,0,3,0,6) object parameter list
+                          MixedStyledText('n_observations', style='parameter')   None:None <desc_parameter>
+                               > (0,0,3,0,6) object parameter
+                            MixedStyledText('n_observations')   None:None <inline>
+                              SingleStyledText('n_observations')
+                          SingleStyledText(', ')
+                          MixedStyledText('means: numpy.ndarray = None', style='parameter')   None:None <desc_parameter>
+                               > (0,0,3,0,6) object parameter
+                            MixedStyledText('means')   None:None <inline>
+                              SingleStyledText('means')
+                            MixedStyledText(':')   None:None <inline>
+                              SingleStyledText(':')
+                            SingleStyledText(' ')
+                            MixedStyledText('numpy.ndarray')   None:None <inline>
+                              SingleStyledText('numpy.ndarray')
+                            SingleStyledText(' ')
+                            MixedStyledText('=')   None:None <inline>
+                              SingleStyledText('=')
+                            SingleStyledText(' ')
+                            MixedStyledText('None')   None:None <inline>
+                              SingleStyledText('None')
+                          SingleStyledText(', ')
+                          MixedStyledText('covariance_matrix: numpy.ndarray...', style='parameter')   None:None <desc_parameter>
+                               > (0,0,3,0,6) object parameter
+                            MixedStyledText('covariance_matrix')   None:None <inline>
+                              SingleStyledText('covariance_matrix')
+                            MixedStyledText(':')   None:None <inline>
+                              SingleStyledText(':')
+                            SingleStyledText(' ')
+                            MixedStyledText('numpy.ndarray')   None:None <inline>
+                              SingleStyledText('numpy.ndarray')
+                            SingleStyledText(' ')
+                            MixedStyledText('=')   None:None <inline>
+                              SingleStyledText('=')
+                            SingleStyledText(' ')
+                            MixedStyledText('None')   None:None <inline>
+                              SingleStyledText('None')
+                      SingleStyledText(' ) ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+              StaticGroupedFlowables(style='content')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:None <desc_content>
+                   > (0,0,2,0,3) object description content
+                Paragraph('A Simulation object stores a Pan...')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:1 <paragraph>
+                     > (0,0,2,0,5) object description content paragraph
+                       (0,0,0,0,2) body
+                  MixedStyledText('A Simulation object stores a Pan...')
+                    SingleStyledText('A Simulation object stores a Pan...')
+                    MixedStyledText('means', style='monospaced')   None:None <literal>
+                         > (0,0,1,0,1) monospaced
+                      SingleStyledText('means')
+                    SingleStyledText(' or ')
+                    MixedStyledText('covariance_matrix', style='monospaced')   None:None <literal>
+                         > (0,0,1,0,1) monospaced
+                      SingleStyledText('covariance_matrix')
+                    SingleStyledText(' arguments supplied at initializ...')
+                    MixedStyledText('means', style='monospaced')   None:None <literal>
+                         > (0,0,1,0,1) monospaced
+                      SingleStyledText('means')
+                    SingleStyledText(' nor ')
+                    MixedStyledText('covariance_matrix', style='monospaced')   None:None <literal>
+                         > (0,0,1,0,1) monospaced
+                      SingleStyledText('covariance_matrix')
+                    SingleStyledText(' is supplied, the number of feat...')
+                    MixedStyledText('n_observations', style='monospaced')   None:None <literal>
+                         > (0,0,1,0,1) monospaced
+                      SingleStyledText('n_observations')
+                    SingleStyledText(' thus the DataFrame will be squa...')
+                Paragraph('Currently, MASE only supports si...')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:5 <paragraph>
+                     > (0,0,2,0,5) object description content paragraph
+                       (0,0,0,0,2) body
+                  MixedStyledText('Currently, MASE only supports si...')
+                    SingleStyledText('Currently, MASE only supports si...')
+                DefinitionList(style='field list')   None:None <field_list>
+                     > (0,0,1,0,2) field list
+                       (0,0,0,0,2) definition list
+                  LabeledFlowable()   None:None <field>
+                       > (0,0,1,0,4) field list item
+                         (0,0,0,0,4) definition list item
+                    Paragraph('Parameters', style='field name')
+                         > (0,0,2,0,6) field name
+                           (0,0,0,0,2) body
+                      MixedStyledText('Parameters')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation:0 <field_name>
+                        SingleStyledText('Parameters')
+                    StaticGroupedFlowables()   None:None <field_body>
+                      List(style='bulleted')   None:None <bullet_list>
+                           > (0,0,1,0,2) bulleted list
+                        ListItem()
+                             x (0,0,1,0,4) bulleted list item
+                             > fallback to default style
+                          ListItemLabel('•')
+                               > (0,0,1,0,6) bulleted list item label
+                                 (0,0,0,0,2) list item label
+                              MixedStyledText('•')
+                                SingleStyledText('')
+                                SingleStyledText('•')
+                                SingleStyledText('')
+                          StaticGroupedFlowables()   None:None <list_item>
+                               > (0,0,0,0,3) list item body
+                            Paragraph('n_observations – number of obser...')   None:None <paragraph>
+                                 > (0,0,0,0,5) list item paragraph
+                                   (0,0,0,0,2) body
+                              MixedStyledText('n_observations – number of obser...')
+                                MixedStyledText('n_observations', style='literal strong')   None:None <literal_strong>
+                                     > (0,0,1,0,1) literal strong
+                                  SingleStyledText('n_observations')
+                                SingleStyledText(' – ')
+                                SingleStyledText('number of observations to simula...')
+                        ListItem()
+                             x (0,0,1,0,4) bulleted list item
+                             > fallback to default style
+                          ListItemLabel('•')
+                               > (0,0,1,0,6) bulleted list item label
+                                 (0,0,0,0,2) list item label
+                              MixedStyledText('•')
+                                SingleStyledText('')
+                                SingleStyledText('•')
+                                SingleStyledText('')
+                          StaticGroupedFlowables()   None:None <list_item>
+                               > (0,0,0,0,3) list item body
+                            Paragraph('means – Optional; numpy array of...')   None:None <paragraph>
+                                 > (0,0,0,0,5) list item paragraph
+                                   (0,0,0,0,2) body
+                              MixedStyledText('means – Optional; numpy array of...')
+                                MixedStyledText('means', style='literal strong')   None:None <literal_strong>
+                                     > (0,0,1,0,1) literal strong
+                                  SingleStyledText('means')
+                                SingleStyledText(' – ')
+                                SingleStyledText('Optional; numpy array of means c...')
+                        ListItem()
+                             x (0,0,1,0,4) bulleted list item
+                             > fallback to default style
+                          ListItemLabel('•')
+                               > (0,0,1,0,6) bulleted list item label
+                                 (0,0,0,0,2) list item label
+                              MixedStyledText('•')
+                                SingleStyledText('')
+                                SingleStyledText('•')
+                                SingleStyledText('')
+                          StaticGroupedFlowables()   None:None <list_item>
+                               > (0,0,0,0,3) list item body
+                            Paragraph('covariance_matrix – Optional; nu...')   None:None <paragraph>
+                                 > (0,0,0,0,5) list item paragraph
+                                   (0,0,0,0,2) body
+                              MixedStyledText('covariance_matrix – Optional; nu...')
+                                MixedStyledText('covariance_matrix', style='literal strong')   None:None <literal_strong>
+                                     > (0,0,1,0,1) literal strong
+                                  SingleStyledText('covariance_matrix')
+                                SingleStyledText(' – ')
+                                SingleStyledText('Optional; numpy array of covaria...')
+                LabeledFlowable(style='object description')   None:None <desc>
+                     > (0,0,1,0,2) object description
+                  StaticGroupedFlowables(style='signatures')
+                       > (0,0,2,0,3) object signatures
+                    Paragraph('add_gaussian_observations ( summ...', id='%overview#mase.Simulation.add_gaussian_observations')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.add_gaussian_observations:1 <desc_signature>
+                         > (0,0,2,0,5) object signature
+                           (0,0,0,0,2) body
+                      MixedStyledText('add_gaussian_observations ( summ...')
+                        MixedStyledText('add_gaussian_observations', style='main object name')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.add_gaussian_observations:None <desc_name>
+                             > (0,0,3,0,6) object name
+                          SingleStyledText('add_gaussian_observations')
+                        MixedStyledText(' ( summary_df, feature_index, df...')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.add_gaussian_observations:None <desc_parameterlist>
+                          MixedStyledText(' ( summary_df, feature_index, df...')
+                            SingleStyledText(' ( ', style='parentheses')
+                                 > (0,0,3,0,6) object parentheses
+                            MixedStyledText('summary_df, feature_index, df=No...', style='parameter list')
+                                 > (0,0,3,0,6) object parameter list
+                              MixedStyledText('summary_df', style='parameter')   None:None <desc_parameter>
+                                   > (0,0,3,0,6) object parameter
+                                MixedStyledText('summary_df')   None:None <inline>
+                                  SingleStyledText('summary_df')
+                              SingleStyledText(', ')
+                              MixedStyledText('feature_index', style='parameter')   None:None <desc_parameter>
+                                   > (0,0,3,0,6) object parameter
+                                MixedStyledText('feature_index')   None:None <inline>
+                                  SingleStyledText('feature_index')
+                              SingleStyledText(', ')
+                              MixedStyledText('df=None', style='parameter')   None:None <desc_parameter>
+                                   > (0,0,3,0,6) object parameter
+                                MixedStyledText('df')   None:None <inline>
+                                  SingleStyledText('df')
+                                MixedStyledText('=')   None:None <inline>
+                                  SingleStyledText('=')
+                                MixedStyledText('None')   None:None <inline>
+                                  SingleStyledText('None')
+                              SingleStyledText(', ')
+                              MixedStyledText('visualize=False', style='parameter')   None:None <desc_parameter>
+                                   > (0,0,3,0,6) object parameter
+                                MixedStyledText('visualize')   None:None <inline>
+                                  SingleStyledText('visualize')
+                                MixedStyledText('=')   None:None <inline>
+                                  SingleStyledText('=')
+                                MixedStyledText('False')   None:None <inline>
+                                  SingleStyledText('False')
+                              SingleStyledText(', ')
+                              MixedStyledText('append=False', style='parameter')   None:None <desc_parameter>
+                                   > (0,0,3,0,6) object parameter
+                                MixedStyledText('append')   None:None <inline>
+                                  SingleStyledText('append')
+                                MixedStyledText('=')   None:None <inline>
+                                  SingleStyledText('=')
+                                MixedStyledText('False')   None:None <inline>
+                                  SingleStyledText('False')
+                          SingleStyledText(' ) ', style='parentheses')
+                               > (0,0,3,0,6) object parentheses
+                  StaticGroupedFlowables(style='content')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.add_gaussian_observations:None <desc_content>
+                       > (0,0,2,0,3) object description content
+                    DefinitionList(style='field list')   None:None <field_list>
+                         > (0,0,1,0,2) field list
+                           (0,0,0,0,2) definition list
+                      LabeledFlowable()   None:None <field>
+                           > (0,0,1,0,4) field list item
+                             (0,0,0,0,4) definition list item
+                        Paragraph('Parameters', style='field name')
+                             > (0,0,2,0,6) field name
+                               (0,0,0,0,2) body
+                          MixedStyledText('Parameters')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.add_gaussian_observations:0 <field_name>
+                            SingleStyledText('Parameters')
+                        StaticGroupedFlowables()   None:None <field_body>
+                LabeledFlowable(style='object description')   None:None <desc>
+                     > (0,0,1,0,2) object description
+                  StaticGroupedFlowables(style='signatures')
+                       > (0,0,2,0,3) object signatures
+                    Paragraph('get_data (  ) ', id='%overview#mase.Simulation.get_data')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.get_data:1 <desc_signature>
+                         > (0,0,2,0,5) object signature
+                           (0,0,0,0,2) body
+                      MixedStyledText('get_data (  ) ')
+                        MixedStyledText('get_data', style='main object name')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.get_data:None <desc_name>
+                             > (0,0,3,0,6) object name
+                          SingleStyledText('get_data')
+                        MixedStyledText(' (  ) ')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.get_data:None <desc_parameterlist>
+                          MixedStyledText(' ( ')
+                            SingleStyledText(' ( ', style='parentheses')
+                                 > (0,0,3,0,6) object parentheses
+                            MixedStyledText('', style='parameter list')
+                                 > (0,0,3,0,6) object parameter list
+                          SingleStyledText(' ) ', style='parentheses')
+                               > (0,0,3,0,6) object parentheses
+                  StaticGroupedFlowables(style='content')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.get_data:None <desc_content>
+                       > (0,0,2,0,3) object description content
+                    Paragraph('Getter for DataFrame of Simulati...')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.get_data:1 <paragraph>
+                         > (0,0,2,0,5) object description content paragraph
+                           (0,0,0,0,2) body
+                      MixedStyledText('Getter for DataFrame of Simulati...')
+                        SingleStyledText('Getter for DataFrame of ')
+                        MixedStyledText('Simulation', style='monospaced')   None:None <literal>
+                             > (0,0,1,0,1) monospaced
+                          SingleStyledText('Simulation')
+                        SingleStyledText(' object')
+                    DefinitionList(style='field list')   None:None <field_list>
+                         > (0,0,1,0,2) field list
+                           (0,0,0,0,2) definition list
+                      LabeledFlowable()   None:None <field>
+                           > (0,0,1,0,4) field list item
+                             (0,0,0,0,4) definition list item
+                        Paragraph('Returns', style='field name')
+                             > (0,0,2,0,6) field name
+                               (0,0,0,0,2) body
+                          MixedStyledText('Returns')   /Users/mchris/Documents/GitHub/MASE/mase/DataSimulation.py:docstring of mase.Simulation.get_data:0 <field_name>
+                            SingleStyledText('Returns')
+                        StaticGroupedFlowables()   None:None <field_body>
+                          Paragraph('Pandas DataFrame')   None:None <paragraph>
+                               > (0,0,0,0,2) body
+                            MixedStyledText('Pandas DataFrame')
+                              SingleStyledText('Pandas DataFrame')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		3')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		3')
+        Tab('	')
+        Tab('	')
+        Field('3')
+          SingleStyledText('3')
+---------------------------------- page 4 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      (continued) StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:0 <compound>
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MASE, Release 0.0.7')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MASE, Release 0.0.7')
+        Field('MASE')
+          SingleStyledText('MASE')
+        SingleStyledText(', ')
+        Field('Release 0.0.7')
+          SingleStyledText('Release 0.0.7')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('4		Chapter 2.  Overview')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('4		Chapter 2.  Overview')
+        Field('4')
+          SingleStyledText('4')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+          SingleStyledText('Chapter')
+        SingleStyledText(' ')
+        Field('2')
+          SingleStyledText('2')
+        SingleStyledText('.  ')
+        Field('Overview')
+          SingleStyledText('Overview')
+---------------------------------- page 5 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Chapter 3', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('Chapter 3')
+      MixedStyledText('Chapter ')
+        StringField('Chapter')
+          SingleStyledText('Chapter')
+        SingleStyledText(' ')
+      Field('3', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('3')
+  Paragraph('Simulating New Data', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Simulating New Data')
+      SingleStyledText('Simulating New Data')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      (continued) StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:0 <compound>
+        StaticGroupedFlowables(id='%simulating_data')   None:None <start_of_file>
+          Section(id='%simulating_data#simulating-new-data')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:2 <section>
+               > (0,0,0,1,2) chapter
+            Section(id='%simulating_data#create-a-simulation-object')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:5 <section>
+              Heading('3.1 Create a Simulation Object')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:5 <title>
+                   > (0,0,0,1,2) heading level 2
+                     (0,0,0,0,2) other heading levels
+                  MixedStyledText('3.1 Create a Simulation Object')
+                    SingleStyledText('3.1')
+                    SingleStyledText(' ')
+                    SingleStyledText('Create a Simulation Object')
+              Paragraph('Getting started with MASE is str...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:6 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('Getting started with MASE is str...')
+                  SingleStyledText('Getting started with MASE is str...')
+              Paragraph('Covariance Matrix: Let’s simulat...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:8 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('Covariance Matrix: Let’s simulat...')
+                  SingleStyledText('Covariance Matrix: Let’s simulat...')
+                  MixedStyledText('I\in \mathbb{R}^{5\text{x}5}')   None:None <math>
+                    WarnInline('')
+                    MixedStyledText('I\in \mathbb{R}^{5\text{x}5}', style='math')
+                         > (0,0,1,0,1) inline math
+                      SingleStyledText('I\in \mathbb{R}^{5\text{x}5}')
+              Paragraph('Means: Let’s choose each feature...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:10 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('Means: Let’s choose each feature...')
+                  SingleStyledText('Means: Let’s choose each feature...')
+                  MixedStyledText('means', style='monospaced')   None:None <literal>
+                       > (0,0,1,0,1) monospaced
+                    SingleStyledText('means')
+                  SingleStyledText(' argument')
+              Paragraph('N: Let’s generate 100 observatio...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:12 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('N: Let’s generate 100 observatio...')
+                  SingleStyledText('N: Let’s generate 100 observatio...')
+              CodeBlock('    cov = np.eye(5)  # 5 indepen...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:14 <literal_block>
+                   > (1,0,0,0,2) code block
+                     (0,0,0,0,1) body
+                Token('    ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('cov', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('np', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('.', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token('eye', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('(', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('5', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token(')', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('  ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('# 5 independent features all wit...', type=Token.Comment.Single)
+                     > (0,0,0,1,2) (pygments)Token.Comment.Single
+                Token('\n    ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('sim', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('Simulation', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('(', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('100', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token(',', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('covariance_matrix', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token('cov', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token(')', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('  ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('# 100 observations', type=Token.Comment.Single)
+                     > (0,0,0,1,2) (pygments)Token.Comment.Single
+                Token('\n', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+              Paragraph('Great! Now we have a Simulation ...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:17 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('Great! Now we have a Simulation ...')
+                  SingleStyledText('Great! Now we have a ')
+                  MixedStyledText('Simulation', style='monospaced')   None:None <literal>
+                       > (0,0,1,0,1) monospaced
+                    SingleStyledText('Simulation')
+                  SingleStyledText(' object created and we can begin...')
+              Paragraph('First, let’s decide what anomalo...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:19 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('First, let’s decide what anomalo...')
+                  SingleStyledText('First, let’s decide what anomalo...')
+                  MixedStyledText('summary_df', style='monospaced')   None:None <literal>
+                       > (0,0,1,0,1) monospaced
+                    SingleStyledText('summary_df')
+              CodeBlock('    summary_df = pd.DataFrame()\n...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:21 <literal_block>
+                   > (1,0,0,0,2) code block
+                     (0,0,0,0,1) body
+                Token('    ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('summary_df', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('pd', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('.', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token('DataFrame', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('()', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('\n    ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('summary_df', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('[', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(''mean'', type=Token.Literal.String.Single)
+                     > (0,0,0,1,2) (pygments)Token.Literal.String.Single
+                Token(']', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('[', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('3', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token(',', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('0', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token(']', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('\n    ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('summary_df', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('[', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(''sd'', type=Token.Literal.String.Single)
+                     > (0,0,0,1,2) (pygments)Token.Literal.String.Single
+                Token(']', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('[', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('1', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token(',', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('2', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token(']', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('\n    ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('summary_df', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('[', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(''n_obs'', type=Token.Literal.String.Single)
+                     > (0,0,0,1,2) (pygments)Token.Literal.String.Single
+                Token(']', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('[', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('20', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token(',', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('10', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token(']', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('\n', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+              Paragraph('summary_df now looks something l...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:24 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('summary_df now looks something l...')
+                  MixedStyledText('summary_df', style='title reference')   None:None <title_reference>
+                       > (0,0,1,0,1) title reference
+                    SingleStyledText('summary_df')
+                  SingleStyledText(' now looks something like this:')
+              StaticGroupedFlowables(style='block quote')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:None <block_quote>
+                   > (0,0,1,0,1) block quote
+                Table()   None:None <table>
+                     > (0,0,0,0,2) table
+                  TableHead()
+                    TableRow()
+                      TableCell()   None:None <entry>
+                           x (0,0,0,0,8) table head cell
+                           > (0,0,0,0,7) table cell
+                        Paragraph('mean')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:27 <paragraph>
+                             > (0,0,0,0,10) table head cell paragraph
+                               (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('mean')
+                            SingleStyledText('mean')
+                        TableCellBackground()
+                      TableCell()   None:None <entry>
+                           x (0,0,0,0,8) table head cell
+                           > (0,0,0,0,7) table cell
+                        Paragraph('sd')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:27 <paragraph>
+                             > (0,0,0,0,10) table head cell paragraph
+                               (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('sd')
+                            SingleStyledText('sd')
+                        TableCellBackground()
+                      TableCell()   None:None <entry>
+                           x (0,0,0,0,8) table head cell
+                           > (0,0,0,0,7) table cell
+                        Paragraph('n_obs')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:27 <paragraph>
+                             > (0,0,0,0,10) table head cell paragraph
+                               (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('n_obs')
+                            SingleStyledText('n_obs')
+                        TableCellBackground()
+                  TableBody()
+                    TableRow()
+                      TableCell()   None:None <entry>
+                           > (0,0,0,0,7) table cell
+                        Paragraph('3')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:29 <paragraph>
+                             > (0,0,0,1,8) table first column paragraph
+                               (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('3')
+                            SingleStyledText('3')
+                        Paragraph('0')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:31 <paragraph>
+                             > (0,0,0,1,8) table first column paragraph
+                               (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('0')
+                            SingleStyledText('0')
+                        TableCellBackground()
+                             x (0,0,0,2,8) table body cell background on odd row
+                             > fallback to default style
+                      TableCell()   None:None <entry>
+                           > (0,0,0,0,7) table cell
+                        Paragraph('1')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:29 <paragraph>
+                             > (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('1')
+                            SingleStyledText('1')
+                        Paragraph('2')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:31 <paragraph>
+                             > (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('2')
+                            SingleStyledText('2')
+                        TableCellBackground()
+                             x (0,0,0,2,8) table body cell background on odd row
+                             > fallback to default style
+                      TableCell()   None:None <entry>
+                           > (0,0,0,0,7) table cell
+                        Paragraph('20')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:29 <paragraph>
+                             > (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('20')
+                            SingleStyledText('20')
+                        Paragraph('10')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:31 <paragraph>
+                             > (0,0,0,0,9) table body cell paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('10')
+                            SingleStyledText('10')
+                        TableCellBackground()
+                             x (0,0,0,2,8) table body cell background on odd row
+                             > fallback to default style
+              Paragraph('This dataframe corresponds to th...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:34 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('This dataframe corresponds to th...')
+                  SingleStyledText('This dataframe corresponds to th...')
+              List(style='bulleted')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:36 <bullet_list>
+                   > (0,0,1,0,2) bulleted list
+                ListItem()
+                     x (0,0,1,0,4) bulleted list item
+                     > fallback to default style
+                  ListItemLabel('•')
+                       > (0,0,1,0,6) bulleted list item label
+                         (0,0,0,0,2) list item label
+                      MixedStyledText('•')
+                        SingleStyledText('')
+                        SingleStyledText('•')
+                        SingleStyledText('')
+                  StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:None <list_item>
+                       > (0,0,0,0,3) list item body
+                    Paragraph('20 observations N \sim (3, \sigm...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:36 <paragraph>
+                         > (0,0,0,0,5) list item paragraph
+                           (0,0,0,0,2) body
+                      MixedStyledText('20 observations N \sim (3, \sigm...')
+                        MixedStyledText('20', style='monospaced')   None:None <literal>
+                             > (0,0,1,0,1) monospaced
+                          SingleStyledText('20')
+                        SingleStyledText(' observations ')
+                        MixedStyledText('N \sim (3, \sigma)')   None:None <math>
+                          WarnInline('')
+                          MixedStyledText('N \sim (3, \sigma)', style='math')
+                               > (0,0,1,0,1) inline math
+                            SingleStyledText('N \sim (3, \sigma)')
+                ListItem()
+                     x (0,0,1,0,4) bulleted list item
+                     > fallback to default style
+                  ListItemLabel('•')
+                       > (0,0,1,0,6) bulleted list item label
+                         (0,0,0,0,2) list item label
+                      MixedStyledText('•')
+                        SingleStyledText('')
+                        SingleStyledText('•')
+                        SingleStyledText('')
+                  StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:None <list_item>
+                       > (0,0,0,0,3) list item body
+                    Paragraph('10 observations N \sim (0, 2\sig...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:37 <paragraph>
+                         > (0,0,0,0,5) list item paragraph
+                           (0,0,0,0,2) body
+                      MixedStyledText('10 observations N \sim (0, 2\sig...')
+                        MixedStyledText('10', style='monospaced')   None:None <literal>
+                             > (0,0,1,0,1) monospaced
+                          SingleStyledText('10')
+                        SingleStyledText(' observations ')
+                        MixedStyledText('N \sim (0, 2\sigma)')   None:None <math>
+                          WarnInline('')
+                          MixedStyledText('N \sim (0, 2\sigma)', style='math')
+                               > (0,0,1,0,1) inline math
+                            SingleStyledText('N \sim (0, 2\sigma)')
+              Paragraph('Let’s apply this to feature 0 in...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:39 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('Let’s apply this to feature 0 in...')
+                  SingleStyledText('Let’s apply this to feature 0 in...')
+              CodeBlock('    feature_index = 0\n    sim.ad...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:41 <literal_block>
+                   > (1,0,0,0,2) code block
+                     (0,0,0,0,1) body
+                Token('    ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('feature_index', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('0', type=Token.Literal.Number.Integer)
+                     > (0,0,0,1,2) (pygments)Token.Literal.Number.Integer
+                Token('\n    ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('sim', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('.', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token('add_gaussian_observations', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('(', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('summary_df', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token(',', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('feature_index', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token(',', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token(' ', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+                Token('visualize', type=Token.Name)
+                     > (0,0,0,1,2) (pygments)Token.Name
+                Token('=', type=Token.Operator)
+                     > (0,0,0,1,2) (pygments)Token.Operator
+                Token('True', type=Token.Keyword.Constant)
+                     > (0,0,0,1,2) (pygments)Token.Keyword.Constant
+                Token(')', type=Token.Punctuation)
+                     > (0,0,0,1,2) (pygments)Token.Punctuation
+                Token('\n', type=Token.Text)
+                     > (0,0,0,1,2) (pygments)Token.Text
+              Paragraph('Go ahead and give this code a tr...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:44 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('Go ahead and give this code a tr...')
+                  SingleStyledText('Go ahead and give this code a tr...')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		5')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		5')
+        Tab('	')
+        Tab('	')
+        Field('5')
+          SingleStyledText('5')
+---------------------------------- page 6 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      (continued) StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:0 <compound>
+        (continued) StaticGroupedFlowables(id='%simulating_data')   None:None <start_of_file>
+          (continued) Section(id='%simulating_data#simulating-new-data')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:2 <section>
+               > (0,0,0,1,2) chapter
+            (continued) Section(id='%simulating_data#create-a-simulation-object')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:5 <section>
+              StaticGroupedFlowables(style='block quote')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:None <block_quote>
+                   > (0,0,1,0,1) block quote
+                Paragraph('mase.basic_demo()')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:47 <paragraph>
+                     > (0,0,0,0,2) body
+              Paragraph('Which runs the following functio...')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:49 <paragraph>
+                   > (0,0,0,0,2) body
+                MixedStyledText('Which runs the following functio...')
+                  SingleStyledText('Which runs the following functio...')
+              StaticGroupedFlowables(style='block quote')   None:None <block_quote>
+                   > (0,0,1,0,1) block quote
+                DefinitionList(style='field list')   None:None <field_list>
+                     > (0,0,1,0,2) field list
+                       (0,0,0,0,2) definition list
+                  LabeledFlowable()   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:51 <field>
+                       > (0,0,1,0,4) field list item
+                         (0,0,0,0,4) definition list item
+                    Paragraph('lines', style='field name')
+                         > (0,0,2,0,6) field name
+                           (0,0,0,0,2) body
+                      MixedStyledText('lines')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:0 <field_name>
+                        SingleStyledText('lines')
+                    StaticGroupedFlowables()   None:None <field_body>
+                      Paragraph('4-14')   /Users/mchris/Documents/GitHub/MASE/docs/source/simulating_data.rst:51 <paragraph>
+                           > (0,0,0,0,2) body
+                        MixedStyledText('4-14')
+                          SingleStyledText('4-14')
+      List(style='bulleted')   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:21 <bullet_list>
+           > (0,0,1,0,2) bulleted list
+        ListItem()
+             x (0,0,1,0,4) bulleted list item
+             > fallback to default style
+          ListItemLabel('•')
+               > (0,0,1,0,6) bulleted list item label
+                 (0,0,0,0,2) list item label
+              MixedStyledText('•')
+                SingleStyledText('')
+                SingleStyledText('•')
+                SingleStyledText('')
+          StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:None <list_item>
+               > (0,0,0,0,3) list item body
+            Paragraph('Index')   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:21 <paragraph>
+                 > (0,0,0,0,5) list item paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Index')
+                AnnotatedText('Index', style='internal link')   None:None <reference>
+                     > (0,0,1,0,1) internal hyperlink
+                  MixedStyledText('Index')
+                    MixedStyledText('Index')   None:None <inline>
+                      SingleStyledText('Index')
+        ListItem()
+             x (0,0,1,0,4) bulleted list item
+             > fallback to default style
+          ListItemLabel('•')
+               > (0,0,1,0,6) bulleted list item label
+                 (0,0,0,0,2) list item label
+              MixedStyledText('•')
+                SingleStyledText('')
+                SingleStyledText('•')
+                SingleStyledText('')
+          StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:None <list_item>
+               > (0,0,0,0,3) list item body
+            Paragraph('Module Index')   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:22 <paragraph>
+                 > (0,0,0,0,5) list item paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Module Index')
+                AnnotatedText('Module Index', style='internal link')   None:None <reference>
+                     > (0,0,1,0,1) internal hyperlink
+                  MixedStyledText('Module Index')
+                    MixedStyledText('Module Index')   None:None <inline>
+                      SingleStyledText('Module Index')
+        ListItem()
+             x (0,0,1,0,4) bulleted list item
+             > fallback to default style
+          ListItemLabel('•')
+               > (0,0,1,0,6) bulleted list item label
+                 (0,0,0,0,2) list item label
+              MixedStyledText('•')
+                SingleStyledText('')
+                SingleStyledText('•')
+                SingleStyledText('')
+          StaticGroupedFlowables()   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:None <list_item>
+               > (0,0,0,0,3) list item body
+            Paragraph('Search Page')   /Users/mchris/Documents/GitHub/MASE/docs/source/index.rst:23 <paragraph>
+                 > (0,0,0,0,5) list item paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Search Page')
+                AnnotatedText('Search Page', style='internal link')   None:None <reference>
+                     > (0,0,1,0,1) internal hyperlink
+                  MixedStyledText('Search Page')
+                    MixedStyledText('Search Page')   None:None <inline>
+                      SingleStyledText('Search Page')
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MASE, Release 0.0.7')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MASE, Release 0.0.7')
+        Field('MASE')
+          SingleStyledText('MASE')
+        SingleStyledText(', ')
+        Field('Release 0.0.7')
+          SingleStyledText('Release 0.0.7')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('6		Chapter 3.  Simulating New Da...')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('6		Chapter 3.  Simulating New Da...')
+        Field('6')
+          SingleStyledText('6')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+          SingleStyledText('Chapter')
+        SingleStyledText(' ')
+        Field('3')
+          SingleStyledText('3')
+        SingleStyledText('.  ')
+        Field('Simulating New Data')
+          SingleStyledText('Simulating New Data')
+---------------------------------- page 7 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('​', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+    Field('​')
+      SingleStyledText('Index')
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    StaticGroupedFlowables()
+    IndexSection()
+         > (0,0,0,1,1) chapter
+      Index()   index
+           > (0,0,0,0,2) index
+        IndexLabel('A')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('A')
+        IndexEntry('add_gaussian_observations() (mas...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('add_gaussian_observations() (mas...')
+            SingleStyledText('add_gaussian_observations() (mas...')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        IndexLabel('G')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('G')
+        IndexEntry('get_data() (mase.Simulation meth...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('get_data() (mase.Simulation meth...')
+            SingleStyledText('get_data() (mase.Simulation meth...')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        IndexLabel('S')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('S')
+        IndexEntry('Simulation (class in mase), 3')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('Simulation (class in mase), 3')
+            SingleStyledText('Simulation (class in mase), ')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+#### ChainedContainer('column2')
+  StaticGroupedFlowables()
+    StaticGroupedFlowables()
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		7')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		7')
+        Tab('	')
+        Tab('	')
+        Field('7')
+          SingleStyledText('7')
+---------------------------------- page 8 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MASE, Release 0.0.7')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MASE, Release 0.0.7')
+        Field('MASE')
+          SingleStyledText('MASE')
+        SingleStyledText(', ')
+        Field('Release 0.0.7')
+          SingleStyledText('Release 0.0.7')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('8		​')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('8		​')
+        Field('8')
+          SingleStyledText('8')
+        Tab('	')
+        Tab('	')
+        Field('​')
+          SingleStyledText('Index')
+---------------------------------- page 9 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Index', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+    Field('Index')
+      SingleStyledText('Index')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    IndexSection()
+         > (0,0,0,1,1) chapter
+      Index()   index
+           > (0,0,0,0,2) index
+        IndexLabel('A')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('A')
+        IndexEntry('add_gaussian_observations() (mas...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('add_gaussian_observations() (mas...')
+            SingleStyledText('add_gaussian_observations() (mas...')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        IndexLabel('G')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('G')
+        IndexEntry('get_data() (mase.Simulation meth...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('get_data() (mase.Simulation meth...')
+            SingleStyledText('get_data() (mase.Simulation meth...')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        IndexLabel('S')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('S')
+        IndexEntry('Simulation (class in mase), 3')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('Simulation (class in mase), 3')
+            SingleStyledText('Simulation (class in mase), ')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+#### ChainedContainer('column2')
+  (continued) StaticGroupedFlowables()
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		9')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		9')
+        Tab('	')
+        Tab('	')
+        Field('9')
+          SingleStyledText('9')
