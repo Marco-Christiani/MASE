@@ -4,3 +4,5 @@ A data simulation engine for multivariate time series data with support for anom
 
 Installation:
 `pip install mase`
+
+Documentation: https://mase.readthedocs.io/en/latest/
